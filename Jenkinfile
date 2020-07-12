@@ -1,27 +1,26 @@
-pipeline { 
-    agent any  
-    stages { 
-        stage('Build') { 
-            steps { 
-               echo 'This is a minimal pipeline.' 
-			   withMaven(maven : 'maven_3.6.0') {
-                    sh 'mvn clean compile'
-                }
+pipeline {
+    agent any
+    tools {
+        maven 'Maven 3.3.9'
+        jdk 'jdk8'
+    }
+    stages {
+        stage ('Initialize') {
+            steps {
+                sh '''
+                    echo "PATH = ${PATH}"
+                    echo "M2_HOME = ${M2_HOME}"
+                '''
             }
         }
-		stage('QA') { 
-            steps { 
-               echo 'This is a minimal pipeline QA' 
-			   withMaven(maven : 'maven_3.6.0') {
-                    sh 'mvn test'
-                }
+
+        stage ('Build') {
+            steps {
+                sh 'mvn -Dmaven.test.failure.ignore=true install' 
             }
-        }
-		stage('DEploy') { 
-            steps { 
-               echo 'This is a minimal pipeline QA' 
-			   withMaven(maven : 'Maven_3.6.0') {
-                    sh 'mvn deploy'
+            post {
+                success {
+                    junit 'target/surefire-reports/**/*.xml' 
                 }
             }
         }
