@@ -5,16 +5,20 @@
       {
         "name": "Open Chrome and start applicaiton",
         "aggregatedDurations": {
-          "average": 9.05948445,
-          "median": 9.05948445
+          "average": 9.573924233,
+          "median": 9.0522337
         },
         "durations": [
           {
-            "duration": 10.1070274,
+            "duration": 10.6847485,
             "location": "FeatureFile\\myapplication.feature:7"
           },
           {
-            "duration": 8.0119415,
+            "duration": 8.9847905,
+            "location": "FeatureFile\\myapplication.feature:7"
+          },
+          {
+            "duration": 9.0522337,
             "location": "FeatureFile\\myapplication.feature:7"
           }
         ]
@@ -27,16 +31,20 @@
       {
         "name": "User should be login successfully",
         "aggregatedDurations": {
-          "average": 0.0000803,
-          "median": 0.0000803
+          "average": 0.0001029,
+          "median": 0.0000986
         },
         "durations": [
           {
-            "duration": 0.0001045,
+            "duration": 0.0001156,
             "location": "FeatureFile\\myapplication.feature:9"
           },
           {
-            "duration": 0.0000561,
+            "duration": 0.0000986,
+            "location": "FeatureFile\\myapplication.feature:9"
+          },
+          {
+            "duration": 0.0000945,
             "location": "FeatureFile\\myapplication.feature:9"
           }
         ]
@@ -49,12 +57,25 @@
       {
         "name": "I enter \"Abhijeet\" and password",
         "aggregatedDurations": {
-          "average": 0.480083,
-          "median": 0.480083
+          "average": 0.3244232,
+          "median": 0.3244232
         },
         "durations": [
           {
-            "duration": 0.480083,
+            "duration": 0.3244232,
+            "location": "FeatureFile\\myapplication.feature:8"
+          }
+        ]
+      },
+      {
+        "name": "I enter \"vishal\" and password",
+        "aggregatedDurations": {
+          "average": 0.4534216,
+          "median": 0.4534216
+        },
+        "durations": [
+          {
+            "duration": 0.4534216,
             "location": "FeatureFile\\myapplication.feature:8"
           }
         ]
@@ -62,12 +83,12 @@
       {
         "name": "I enter \"Jayanta\" and password",
         "aggregatedDurations": {
-          "average": 0.2278672,
-          "median": 0.2278672
+          "average": 0.4117092,
+          "median": 0.4117092
         },
         "durations": [
           {
-            "duration": 0.2278672,
+            "duration": 0.4117092,
             "location": "FeatureFile\\myapplication.feature:8"
           }
         ]
