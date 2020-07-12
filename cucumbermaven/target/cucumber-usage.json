@@ -1,0 +1,77 @@
+[
+  {
+    "source": "^Open Chrome and start applicaiton$",
+    "steps": [
+      {
+        "name": "Open Chrome and start applicaiton",
+        "aggregatedDurations": {
+          "average": 9.05948445,
+          "median": 9.05948445
+        },
+        "durations": [
+          {
+            "duration": 10.1070274,
+            "location": "FeatureFile\\myapplication.feature:7"
+          },
+          {
+            "duration": 8.0119415,
+            "location": "FeatureFile\\myapplication.feature:7"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^User should be login successfully$",
+    "steps": [
+      {
+        "name": "User should be login successfully",
+        "aggregatedDurations": {
+          "average": 0.0000803,
+          "median": 0.0000803
+        },
+        "durations": [
+          {
+            "duration": 0.0001045,
+            "location": "FeatureFile\\myapplication.feature:9"
+          },
+          {
+            "duration": 0.0000561,
+            "location": "FeatureFile\\myapplication.feature:9"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I enter {string} and password",
+    "steps": [
+      {
+        "name": "I enter \"Abhijeet\" and password",
+        "aggregatedDurations": {
+          "average": 0.480083,
+          "median": 0.480083
+        },
+        "durations": [
+          {
+            "duration": 0.480083,
+            "location": "FeatureFile\\myapplication.feature:8"
+          }
+        ]
+      },
+      {
+        "name": "I enter \"Jayanta\" and password",
+        "aggregatedDurations": {
+          "average": 0.2278672,
+          "median": 0.2278672
+        },
+        "durations": [
+          {
+            "duration": 0.2278672,
+            "location": "FeatureFile\\myapplication.feature:8"
+          }
+        ]
+      }
+    ]
+  }
+]
